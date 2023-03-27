@@ -1,0 +1,127 @@
+.main {
+  width: 100vw;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-body {
+  width: 1000px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.form-header {
+  position: relative;
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+.form-header::after {
+  position: absolute;
+  justify-self: center;
+  right: -110px;
+  top: 25px;
+  content: "";
+  background-color: gainsboro;
+  width: 100px;
+  height: 2px;
+}
+.form-header::before {
+  position: absolute;
+  left: -110px;
+  top: 25px;
+  content: "";
+  background-color: gainsboro;
+  width: 100px;
+  height: 2px;
+}
+.paragraf {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-items {
+  width: 500px;
+  position: relative;
+}
+.form-name {
+  border-radius: 7px;
+  width: 230px;
+  height: 55px;
+  text-align: left;
+  padding-left: 15px;
+  border: 1px solid gainsboro;
+}
+.form-last-name {
+  position: absolute;
+  right: 0px;
+}
+
+.form-email {
+  display: block;
+  text-align: left;
+  padding-left: 15px;
+  width: 98%;
+  height: 55px;
+  border-radius: 7px;
+  border: 1px solid gainsboro;
+}
+.form-pssword {
+  display: block;
+  text-align: left;
+  padding-left: 15px;
+  width: 98%;
+  height: 55px;
+  border: 1px solid gainsboro;
+
+  border-radius: 3px;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+}
+.checkbox-label {
+  display: block;
+
+  font-size: 0.8em;
+}
+.margin {
+  margin: 5px;
+  margin-bottom: 20px;
+}
+.a {
+  color: rgb(35, 168, 46);
+}
+.button {
+  background-color: rgb(35, 168, 46);
+  width: 98%;
+  height: 50px;
+  border: 0px;
+  border-radius: 3px;
+  color: white;
+  transition: background-color 100ms ease-in, border 50ms linear;
+}
+.focus:focus {
+  border: 1px dashed rgb(0, 0, 0);
+}
+.button:focus,
+.button:hover {
+  border: 1px dashed rgb(0, 0, 0);
+
+  background-color: rgb(210, 225, 239);
+  color: rgb(35, 168, 46);
+}
+
+.border {
+  border-color: gainsboro;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Input-card</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="form-body">
+        <div class="form-header">Register</div>
+        <p class="paragraf">
+          Create your account. It's free and takes a few seconds
+        </p>
+        <form class="form">
+          <fieldset class="form-items">
+            <input
+              class="form-name margin focus"
+              autofocus
+              required
+              type="text"
+              placeholder="First Name"
+              pattern="[A-Za-zÀ-ÖØ-öø-ÿ\-\'\s]"
+              name="First Name"
+              title="Please enter yor Name "
+            />
+            <input
+              class="form-name form-last-name margin focus"
+              autofocus
+              required
+              type="text"
+              value=""
+              placeholder="Last Name"
+              pattern="[A-Za-zÀ-ÖØ-öø-ÿ\-\'\s]"
+              name="Last Name"
+              title="Please enter yor Last name "
+            />
+            <input
+              class="form-email margin focus"
+              autofocus
+              required
+              type="email"
+              placeholder="Email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              name="email"
+              title="Please enter a valid email address"
+            />
+            <input
+              class="form-pssword margin focus"
+              required
+              name="password"
+              placeholder="Password"
+              type="password"
+              value=""
+              title="Password must contain at least one number, one uppercase letter, one lowercase letter, 
+and be at least 8 characters long"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            />
+            <input
+              class="form-pssword margin focus"
+              required
+              name="confirm-password"
+              placeholder="Confirm password"
+              type="password"
+              value=""
+              title="Password must contain at least one number, one uppercase letter, one lowercase letter, 
+and be at least 8 characters long"
+              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            />
+            <label class="checkbox-label margin focus">
+              <input
+                class="checkbox margin focus"
+                type="checkbox"
+                name="confirming privacy Policy"
+                value="true"
+                required
+              />
+              I accept the <a class="a" href="#">Therms of Use</a> &
+              <a class="a" href="#">Privacy Policy</a>
+            </label>
+          </fieldset>
+          <button class="button" autofocus>Register Now</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
